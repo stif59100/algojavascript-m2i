@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boucle caractère</title>
+
+    <div id="target"></div>
+
+    <script> 
+        var output = document.getElementById("target"); 
+        var html = "<ul>"; 
+        var txt = prompt("Entrez un texte"); 
+         
+        for (var i = 0; i <= txt.length; i++) { 
+           html += "<li>" + txt.charAt(i) + "</li>"; 
+        } 
+
+        // inversé 
+        for ( var i = txt.length - 1; i >= 0; i--) {
+            html += "<li>" + txt.charAt(i) + "</li>";
+        }
+        html += "</ul>";
+        output.innerHTML = html; 
+
+        // boucler sur les indices de la chaîne de 0 à taille de la chaîne -1
+        for(index in txt){
+            console.log(index)
+        }
+        
+        //boucle sur les caractères
+        for (letter of txt){
+            console.log(letter)
+        }
+        
+</script>
+    
+</head>
+<body>
+    
+</body>
+</html>

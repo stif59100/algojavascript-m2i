@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Votre commande</title>
+
+    <script>
+        var qt = prompt('Votre commande');
+        qt = parseInt(qt);
+        const unitPrice = 12;
+        ht = qt * unitPrice;
+
+
+        if (ht >= 400 && ht <= 1200) {
+            ht = ht * 0.95;
+            ttc = ht * 1.2;}
+
+        if (ht > 1200) {
+            ht = ht * 0.9;
+            ttc = ht * 1.2;}
+
+
+       console.log(ttc)
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

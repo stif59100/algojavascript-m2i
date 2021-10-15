@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Année bissextile</title>
+<script>
+
+    var year = prompt ('Votre année');
+    year = parseInt(year)
+    var year_bissextile = ( year%400==0 || year%4==0)
+    
+    if (year_bissextile == true) {
+        console.log("votre année est bissextile")
+    }
+
+    else {
+        console.log("L'année n'est pas bissextile")
+    }
+    
+    
+
+</script>
+
+</head>
+<body>
+    
+</body>
+</html>

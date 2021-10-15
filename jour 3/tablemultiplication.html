@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables de multiplication</title>
+    
+    <div id="target"></div>
+
+    <script> 
+        var output = document.getElementById("target"); 
+        var html = "<table>"; 
+        for(var i=1; i <= 1; i++){ 
+            html += "<tr>"; 
+            for(var k=1; k <=10; k++){ 
+                html += "<td>" + (i*k) + "</td>"; 
+            } 
+            html += "</tr>"; 
+        } 
+        html += "</table>"; 
+         
+        output.innerHTML = html; 
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

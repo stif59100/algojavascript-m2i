@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etoile</title>
+    
+    <div id="target"></div>
+    
+    <script>
+
+        
+        // afficher 3 étoiles version longue
+        var str = "";
+        for (var i = 1; i <= 3; i++) {
+            str += "*";
+        }
+        console.log(str)
+
+        // afficher 3 étoiles version courte
+
+        var star = "*";
+        console.log(star.repeat(3));
+
+        var output = ""
+        for (var i = 1; i <= 5; i++) {
+            output += star.repeat(5) + "\n"
+        }
+
+        console.log(output)
+
+        // un triangle
+
+        var output = ""
+        for (var i = 1; i <= 5; i++) {
+            output += star.repeat(i) + "\n"
+        }
+
+        console.log(output)
+
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

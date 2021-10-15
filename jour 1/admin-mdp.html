@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script> 
+
+        var login = prompt("Entrer votre identifiant"); 
+        var pass = prompt("Entrez votre mot de passe"); 
+        
+        if(login == "" || pass == ""){
+            console.log("saisie invalide");
+        }       
+        if(login == "admin" && pass == "123"){ 
+            console.log("Accès autorisé"); 
+        } else { 
+            console.log("Accès interdit") 
+        } 
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

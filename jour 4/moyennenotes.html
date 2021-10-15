@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moyenne note</title>
+</head>
+
+<body>
+
+    <div id="target"></div>
+    </divW>
+
+    <script>
+        const out = document.getElementById("target");
+        var notes = [15, 17, 20, 9, 5, 10];
+        let total = 0;
+        var html = "<ul>";
+    
+
+        for (var item of notes) {
+            html += "<li>" + item + "</li>";
+        }
+        html += "</ul>";
+
+        for (n of notes){
+            total += n;
+        }
+
+        let average = total / notes.length;
+
+        console.log(average)
+        out.innerHTML = html;
+
+    </script>
+
+</body>
+
+</html>

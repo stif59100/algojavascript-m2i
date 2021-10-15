@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        function tri(recherche, source) {
+            // boucle sur les éléments du tableau
+            for (element of source) {
+                // comparer chaque élément avec la recherche
+                if (element = recherche) {
+                    //reurn arrête l'exécution de la fonction
+                    return true;
+                }
+                // si on a pas trouvé
+                return false;
+            }
+        }
+
+        function TriBinaire(recherche, source) {
+            let debut = 0;
+            let fin = source.length - 1;
+
+            while (fin >= debut) {
+                let centre = parseInt((debut + fin) / 2);
+                let val = source[centre];
+                if (recherche > val) {
+                    debut = centre + 1;
+                }
+                else if (recherche < val) {
+                    fin = centre - 1;
+                }
+                else {
+                    return true;
+                }
+                
+            }
+            return false;
+        }
+        console.log(tri(0, [6, 8, 10, 12]))
+        console.log(tri(5, [5, 6, 8, 10, 12]))
+
+        console.log(TriBinaire(10, [6, 8, 10, 12]))
+
+    </script>
+</body>
+
+</html>

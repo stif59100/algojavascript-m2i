@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sommes</title>
+
+    <script>
+
+        // les variables du problème
+
+        // la somme de toutes les saisies
+        var sum = 0;
+
+        // la valeur maximale au delà de laquelle
+        // on arrête de demander la saisie
+        var max = 10;
+        // tant que la somme est des saisies est inférieure au max
+        while (sum < max) {
+            // demande de saisie d'un chiffre
+            var n = prompt("Un nombre");
+            // ajout de la saisie à la somme
+            sum = sum + parseInt(n);
+        }
+        // affichage de la somme
+        console.log(sum);
+
+        // autre syntaxe avec un break
+
+        // réinitialisation de la somme
+        sum = 0
+
+        while (true) {
+            // console.log("infini"); 
+             // demande de saisie d'un chiffre
+            var n = prompt("Un nombre");
+            // ajout de la saisie à la somme
+            sum = sum + parseInt(n);
+            
+            if(sum > max){
+                break;
+            }
+        }
+
+        console.log(sum)
+    </script>
+
+</head>
+
+<body>
+
+</body>
+
+</html>

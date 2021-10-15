@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversion en metre</title>
+
+    <script>
+       
+          // Les données en entrée 
+        var m = prompt("Taille en m"); 
+        // Le calcul 
+        var pied = (m*100) /30.48;
+        var reste = (m*100) % 30.48;
+        var pouce = (reste/2.54);
+        // La sortie
+        // conversion en entier
+        pied= parseInt(pied);
+        pouce= parseInt(pouce);
+        // résultat 
+        console.log(pied);
+        console.log(pouce);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

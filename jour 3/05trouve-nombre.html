@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trouve nombre</title>
+</head>
+<body>
+    <div id="target"></div>
+
+    <script> 
+        var txt = prompt("Entrez un texte"); 
+        var isNumber = true;
+         
+        for (var i = 0; i < txt.length ; i++) { 
+            code = txt.charCodeAt(i) 
+            if( !( code >= 48 && code <= 57)){ 
+                isNumber = false; 
+                foundIndex=i;
+                // On a trouvé une capitale 
+                // inutile de continuer la boucle 
+                break; 
+            } 
+        } 
+        console.log(isNumber); 
+</script>
+</body>
+</html>

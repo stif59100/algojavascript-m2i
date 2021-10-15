@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TROLL</title>
+
+    <script>
+        var action = prompt("Choisissez entre fuire combattre ou se cacher");
+        var choix = true;
+
+
+        if (action == "fuire") {
+            choix = confirm('êtes-vous rapide?')
+            if (choix) {
+                alert("vous vous sauvez de justesse")
+            }
+
+            else {
+                alert("Le troll vous mange")
+            }
+        }
+
+        if (action == "combattre") {
+            choix = confirm('Voulez-vous vous battre?')
+            if (choix) {
+                alert("vous massacrez ce pauvre troll")
+            }
+
+            else {
+                alert("Le troll vous assome et vous mange")
+            }
+        }
+
+        if (action == "se cacher") {
+            choix = confirm('Voulez vous vous cacher?')
+            if (choix) {
+                alert("Le troll ne vous voit pas et passe son chemin")
+            }
+
+            else {
+                alert("le troll vous trouve et vous dévore")
+            }
+        }
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

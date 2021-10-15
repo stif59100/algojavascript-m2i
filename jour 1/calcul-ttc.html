@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcul ttc</title>
+
+    <script> 
+        // Les données en entrée 
+        var ht = prompt("Le montant"); 
+        var taux = prompt("Le taux de tva");
+        var saisieValide = true; 
+        
+        //conversion des saisies en nombre
+        ht = parseFloat (ht);
+        taux = parseFloat (taux);
+        
+        if(ht == "" || taux == ""){
+            console.log("saisie invalide");
+        } 
+
+        // validité du montant
+                if(isNaN(ht)){
+            console.log("La saisie du montant est incorrecte")
+            saisieValide = false
+        };
+        //validité du taux
+        if(isNaN(taux)){
+            console.log("La saisie du montant est incorrecte")
+            saisieValide = false
+        };
+       
+        // on ne fait que si la saisie est valide
+        if (saisieValide == true) {
+        // Le calcul 
+        var ttc = ht*1 + (ht * taux/100); 
+        // La sortie 
+        console.log(ttc)}; 
+
+       
+      
+
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

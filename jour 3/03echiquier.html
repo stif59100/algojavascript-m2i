@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Echiquier</title>
+
+    <div id="target"></div>
+
+
+    <style>
+        .carreblanc {
+            background-color: white;
+            width: 25px;
+            height: 25px;
+            color: white;
+            border: 1px solid white;
+
+        }
+
+
+        .carrenoir {
+            background-color: black;
+            width: 25px;
+            height: 25px;
+            color : black
+            border: solid black;
+
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        var output = document.getElementById("target");
+        var html = "<table>";
+        var carreblanc = 'carreblanc';
+        var carrenoir = "carrenoir";
+
+
+        for (var ligne = 1; ligne <= 8; ligne++) {
+            html += "<tr>";
+            for (var colonne = 1; colonne <= 8; colonne++) {
+                if ((ligne % 2 == 0 && colonne %2 > 0) ||(ligne %2 > 0 && colonne%2==0) )  {
+                    html += "<td class=carrenoir>" + (carrenoir) + "</td>";
+                }
+                else {
+                    html += "<td class=carreblanc>" + (carrenoir) + "</td>";
+
+                }
+
+            }
+            html += "</tr>";
+        }
+        html += "</table>";
+
+        output.innerHTML = html;
+    </script>
+
+</body>
+
+</html>
